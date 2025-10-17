@@ -1,0 +1,118 @@
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+body {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #90EE90;
+}
+body, td, th, input, select, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+fieldset {
+	padding: 10px;
+	border: 2px solid #FF9933;
+}
+legend {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #CC3300;
+}
+.border_bottom {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #90EE90;
+}
+.border_box {
+	border: 1px solid #90EE90;
+}
+.border_right {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #90EE90;
+}
+.border_top {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #90EE90;
+}
+.cabecalho1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF6600;
+	background-color: #FFFF99;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+.cabecalho2 {
+	text-align: right;
+	background-color: #90EE90;
+	padding-top: 5px;
+	padding-right: 25px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+.lista_cabecalho {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #90EE90;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.lista_linhas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #90EE90;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.lista_link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF3300;
+	text-decoration: none;
+}
+.msg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #CC0000;
+	background-color: #FFFFCC;
+	border: 2px solid #CC0000;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 36px;
+	background-image: url(s_attention.png);
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+}
+.rodape1 {
+	background-color: #90EE90;
+	padding-top: 2px;
+	padding-right: 25px;
+	padding-bottom: 2px;
+	padding-left: 25px;
+}
+
+.tb_pass {
+	border: 1px solid #90EE90;
+}
+
+.td_pass {
+	border: 1px solid #90EE90;
+}

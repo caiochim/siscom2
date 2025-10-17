@@ -1,0 +1,72 @@
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.select_pesquisa {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.style2 {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FF6600;
+}
+body, td, th {
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.descricao {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	border: 2px solid #CC0000;
+	background-color: #FFCCFF;
+	font-weight: bold;
+}
+.descricao_titulo {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	font-weight: bold;
+}
+.cabecalho {
+	background-color: #CC0000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.credito {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #3300FF;
+}
+.debito {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #CC0000;
+}
+
+
+.linhas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CC0000;
+	padding-right: 10px;
+	padding-left: 10px;
+}

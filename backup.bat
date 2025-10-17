@@ -1,0 +1,1 @@
+"C:\Arquivos de programas\MySQL\MySQL Server 5.0\bin\mysqldump.exe" -u root --password=password siscom2 > "C:\Arquivos de programas\Apache Group\Apache2\htdocs\SisCom2\backup.sql"

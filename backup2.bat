@@ -1,0 +1,1 @@
+del "C:\Arquivos de programas\Apache Group\Apache2\htdocs\SisCom2\backup.sql"
