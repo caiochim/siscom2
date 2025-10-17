@@ -1,0 +1,58 @@
+<?php /* Smarty version 2.6.22, created on 2014-02-05 14:38:28
+         compiled from entrada_adicionar.html */ ?>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<form id="form1" name="form1" method="post" action="">
+  <div class="cabecalho1">Entrada de Produtos</div>
+  <div class="cabecalho2">
+    <input type="submit" name="avancar" id="avancar" value="Avan&ccedil;ar" />
+    <input type="submit" name="cancelar" id="cancelar" value="Cancelar" />
+  </div>
+  <?php if ($this->_tpl_vars['msg']): ?>
+  <div class="msg"><?php echo $this->_tpl_vars['msg']; ?>
+</div>
+  <?php endif; ?>
+  <div style="padding: 15px">
+    <table border="0" cellpadding="2" cellspacing="0">
+      <tr>
+        <td>Fornecedor:</td>
+      </tr>
+      <tr>
+        <td><select name="id_fornecedor" id="id_fornecedor" style="width: 400px">
+          <option value="0">-- SELECIONE O FORNECEDOR --</option>
+          
+          
+<?php echo $this->_tpl_vars['fornecedores']; ?>
+          
+          
+        
+        </select></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="padding: 0px"><table border="0" cellpadding="2" cellspacing="0">
+          <tr>
+            <td>Nota Fiscal N&ordm;:</td>
+            <td width="20">&nbsp;</td>
+            <td>Data de Emiss&atilde;o:</td>
+            <td width="20">&nbsp;</td>
+            <td>Valor total da nota:</td>
+          </tr>
+          <tr>
+            <td>              <input name="nfnro" type="text" id="nfnro" style="width: 100px" value="<?php echo $this->_tpl_vars['nfnro']; ?>
+" />            </td>
+            <td>&nbsp;</td>
+            <td><?php echo $this->_tpl_vars['data_emissao']; ?>
+</td>
+            <td>&nbsp;</td>
+            <td><input name="total_nota" type="text" id="total_nota" style="width: 100px; text-align: right" value="<?php echo $this->_tpl_vars['total_nota']; ?>
+" /></td>
+          </tr>
+          
+        </table></td>
+      </tr>
+    </table>
+  </div>
+  <div class="rodape1">&nbsp;</div>
+</form>
