@@ -1,0 +1,42 @@
+<form id="form1" name="form1" method="post" action="">
+  <div class="cabecalho1">Relat&oacute;rios - Produtos Mais Vendidos</div>
+  <div class="cabecalho2"> &nbsp;</div>
+  {if $msg}
+  <div class="msg">{$msg}</div>
+  {/if}
+  <div style="padding: 15px">Informe o per&iacute;odo desejado:<br />
+    <br />
+    De: {$select_inicio} | At&eacute;: {$select_fim}
+    <input type="submit" name="gerar_relatorio" id="gerar_relatorio" value="Gerar relat&oacute;rio" />
+    <br />
+    <br />
+    Ordenar por:
+    <input name="ordem" type="radio" id="radio2" value="qtde" checked="checked" />
+    Quantidade |
+    <input name="ordem" type="radio" id="radio" value="subtotal" />
+    Subtotal</div>
+  {if $linhas}
+  <hr />
+  <div style="padding: 15px">    Per&iacute;odo: de {$inicio} at&eacute; {$fim}<br />
+    <table border="0" cellpadding="3" cellspacing="1">
+      <tr>
+        <td class="lista_cabecalho">#</td>
+        <td class="lista_cabecalho">C&oacute;digo</td>
+        <td class="lista_cabecalho">Descri&ccedil;&atilde;o</td>
+        <td class="lista_cabecalho">Qtde</td>
+        <td class="lista_cabecalho">Subtotal (R$)</td>
+      </tr>
+      <!--      <tr>
+        <td align="right" class="lista_linhas">n</td>
+        <td class="lista_linhas">codigo</td>
+        <td class="lista_linhas">descricao</td>
+        <td align="right" class="lista_linhas">888</td>
+        <td align="right" class="lista_linhas">R$888.888,88</td>
+      </tr>
+-->
+      {$linhas}
+    </table>
+  </div>
+  {/if}
+  <div class="rodape1">&nbsp;</div>
+</form>

@@ -1,0 +1,21 @@
+<link href="../style.css" rel="stylesheet" type="text/css">
+<form id="form1" name="form1" method="post" action="">
+<div class="cabecalho1">Entrada de Produtos</div>
+<div class="cabecalho2"><input type="submit" name="adicionar"
+	id="adicionar" value="Adicionar" /></div>
+{if $msg}
+<div class="msg">{$msg}</div>
+{/if}
+<div style="padding: 15px">
+<div align="right">Registros: {$total}</div>
+<table border="0" cellpadding="2" cellspacing="1">
+	<tr>
+		<td class="lista_cabecalho">#</td>
+		<td class="lista_cabecalho">Nota Fiscal</td>
+		<td class="lista_cabecalho">Fornecedor</td>
+	</tr>
+	{$linhas}
+</table>
+</div>
+<div class="rodape1">&nbsp;</div>
+</form>

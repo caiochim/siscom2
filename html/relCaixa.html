@@ -1,0 +1,31 @@
+
+<form id="form1" name="form1" method="post" action="">
+<div class="cabecalho1">Relat&oacute;rios - Fechamento de Caixa</div>
+<div class="cabecalho2">&nbsp;</div>
+{if $msg}
+<div class="msg">{$msg}</div>
+{/if}
+<div style="padding: 15px">Informe a data desejada:<br />
+<br />
+{$select_data} <input type="submit" name="gerar_relatorio"
+	id="gerar_relatorio" value="Gerar relat&oacute;rio" /></div>
+{if $linhas}
+<hr />
+<div style="padding: 15px">Data: {$data}
+<table border="0" align="center" cellpadding="3" cellspacing="1">
+	<tr>
+		<td class="lista_cabecalho">Usu&aacute;rio</td>
+		<td class="lista_cabecalho">Subtotal (R$)</td>
+		<td class="lista_cabecalho">Recargas (R$)</td>
+	</tr>
+	{$linhas}
+	<tr>
+		<td align="right" class="lista_linhas"><strong>TOTAL:</strong></td>
+		<td align="right" class="lista_linhas"><strong>{$total}</strong></td>
+		<td align="right" class="lista_linhas">&nbsp;</td>
+	</tr>
+</table>
+</div>
+{/if}
+<div class="rodape1">&nbsp;</div>
+</form>

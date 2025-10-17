@@ -1,0 +1,91 @@
+{literal}
+<script src="../shortcut.js" type="text/javascript"></script>
+<script>
+shortcut.add( "ESC",
+	function() {
+		if ( confirm( 'Tem certeza que deseja cancelar a venda?' ) )
+		{
+			document.location = '?esc=true';
+		}
+	}
+)
+shortcut.add( "Up",
+	function() {
+		document.form1.qtde.value = (document.form1.qtde.value * 1) + 1;
+	}
+)
+shortcut.add( "Down",
+	function() {
+		if ( document.form1.qtde.value > 1 )
+		{
+			document.form1.qtde.value = (document.form1.qtde.value * 1) - 1;
+		}
+	}
+)
+shortcut.add( "F2",
+	function() {
+		document.location = 'pdv3.php';
+	}
+)
+shortcut.add( "F7",
+	function() {
+		document.location = 'pre2.php';
+	}
+)
+</script>
+{/literal}
+<div class="descricao">{$descricao}&nbsp;</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><div>&nbsp;</div>
+      <div class="descricao_titulo">C&oacute;digo do produto:</div>
+      <div>
+        <input name="codigo" type="text" class="descricao" id="codigo" value="{$codigo}" style="width: 250px">
+      </div>
+      <div>&nbsp;</div>
+      <div class="descricao_titulo">Quantidade:</div>
+      <div>
+        <input name="qtde" type="text" class="descricao" id="qtde" value="1" style="width: 250px; text-align: right">
+      </div>
+      <div>&nbsp;</div>
+      <div class="descricao_titulo">Pre&ccedil;o unit&aacute;rio:</div>
+      <div>
+        <input name="preco_unitario" type="text" class="descricao" id="preco_unitario" value="{$preco_unitario}" style="width: 250px; text-align: right">
+      </div>
+      <div>&nbsp;</div>
+      <div class="descricao_titulo">Subtotal:</div>
+      <div>
+        <input name="subtotal" type="text" class="descricao" id="subtotal" value="{$subtotal}" style="width: 250px; text-align: right">
+      </div>
+      <div>&nbsp;</div>
+      <div>
+        <input type="submit" name="adicionar_produto" id="adicionar_produto" value="ADICIONAR PRODUTO" style="width: 250px">
+        <br>
+        <input type="submit" name="button4" id="button4" value="PESQUISAR (F2)" style="width: 250px">
+        <br>
+        <input type="submit" name="concluir_venda" id="concluir_venda" value="CONCLUIR VENDA (F7)" style="width: 250px">
+        <br>
+        <input type="submit" name="cancela_item" id="cancela_item" value="CANCELAR &Iacute;TENS" style="width: 250px">
+      </div></td>
+    <td valign="top"><div>&nbsp;</div>
+      <table border="0" cellpadding="3" cellspacing="1">
+        <tr>
+          <td class="cabecalho">&nbsp;</td>
+          <td class="cabecalho">C&oacute;digo</td>
+          <td class="cabecalho">Descri&ccedil;&atilde;o</td>
+          <td class="cabecalho">Pre&ccedil;o</td>
+          <td class="cabecalho">Qtde</td>
+          <td class="cabecalho">Subtotal</td>
+        </tr>
+        <!--<tr>
+                  <td class="linhas"><input name="id_item()" type="checkbox" id="id_item()" value="id_item"></td>
+                  <td class="linhas">codigo</td>
+                  <td class="linhas">descricao</td>
+                  <td align="right" class="linhas">preco</td>
+                  <td align="right" class="linhas">qtde</td>
+                  <td align="right" class="linhas">subtotal</td>
+                </tr>-->
+        {$lista}
+      </table></td>
+  </tr>
+</table>

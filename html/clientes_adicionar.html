@@ -1,0 +1,81 @@
+<link href="../style.css" rel="stylesheet" type="text/css">
+<form id="form1" name="form1" method="post" action="">
+  <div class="cabecalho1">Clientes</div>
+  <div class="cabecalho2">
+    <input type="submit" name="salvar" id="salvar" value="Salvar" />
+    <input type="submit" name="cancelar" id="cancelar" value="Cancelar" />
+  </div>
+  {if $msg}
+  <div class="msg">{$msg}</div>
+  {/if}
+  <div style="padding: 15px">
+    <table border="0" cellpadding="2" cellspacing="0">
+      <tr>
+        <td>Nome:</td>
+      </tr>
+      <tr>
+        <td><input name="nome" type="text" id="nome" style="width: 400px" value="{$nome}" maxlength="255" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Endere&ccedil;o:</td>
+      </tr>
+      <tr>
+        <td><input name="endereco" type="text" id="endereco" style="width: 400px" value="{$endereco}" maxlength="255" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Bairro:</td>
+      </tr>
+      <tr>
+        <td><input name="bairro" type="text" id="bairro" style="width: 400px" value="{$bairro}" maxlength="255" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Cidade:</td>
+      </tr>
+      <tr>
+        <td><input name="cidade" type="text" id="cidade" style="width: 400px" value="{$cidade}" maxlength="255" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="padding: 0px"><table border="0" cellpadding="2" cellspacing="0">
+          <tr>
+            <td>Estado:</td>
+            <td width="10">&nbsp;</td>
+            <td>CEP:</td>
+            <td width="10">&nbsp;</td>
+            <td>Telefone:</td>
+            </tr>
+          <tr>
+            <td>{$estado}            </td>
+            <td>&nbsp;</td>
+            <td><input name="cep" type="text" id="cep" style="width: 65px" value="{$cep}" maxlength="8" /></td>
+            <td>&nbsp;</td>
+            <td><input name="ddd" type="text" id="ddd" style="width: 25px" value="{$ddd}" maxlength="2" />
+              <input name="fone" type="text" id="fone" style="width: 65px" value="{$fone}" maxlength="8" /></td>
+            </tr>
+
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Observa&ccedil;&otilde;es:</td>
+      </tr>
+      <tr>
+        <td><textarea name="observacoes" id="observacoes" style="width: 400px; height: 50px">{$observacoes}</textarea></td>
+      </tr>
+    </table>
+  </div>
+  <div class="rodape1">&nbsp;</div>
+</form>

@@ -1,0 +1,38 @@
+<link href="../style.css" rel="stylesheet" type="text/css">
+<form id="form1" name="form1" method="post" action="">
+<div class="cabecalho1">Clientes - Hist&oacute;rico de Compras</div>
+<div class="cabecalho2"><!--    <input type="submit" name="salvar" id="salvar" value="Salvar" />
+    <input type="submit" name="cancelar" id="cancelar" value="Cancelar" />
+--></div>
+{if $msg}
+<div class="msg">{$msg}</div>
+{/if}
+<div style="padding: 15px"> Cliente: {$cliente} <br />
+Saldo atual: R$ {$saldo} <br />
+  <br />
+  <table border="0" cellpadding="2" cellspacing="1">
+  <tr>
+    <td colspan="5" class="lista_cabecalho">Data</td>
+	  </tr>
+  <tr>
+    <td class="lista_cabecalho">C&oacute;digo</td>
+		  <td class="lista_cabecalho">Descri&ccedil;&atilde;o</td>
+		  <td class="lista_cabecalho">Qtde</td>
+		  <td class="lista_cabecalho">Unit&aacute;rio</td>
+		  <td class="lista_cabecalho">Subtotal</td>
+	  </tr>
+  <!--	<tr>
+		<td colspan="5" class="lista_linhas"><strong>&raquo;
+		data &laquo;</strong></td>
+	</tr>
+	<tr>
+		<td class="lista_linhas">cod</td>
+		<td class="lista_linhas">desc</td>
+		<td class="lista_linhas">qtde</td>
+		<td class="lista_linhas">unit</td>
+		<td class="lista_linhas">subt</td>
+	</tr>
+-->	{$linhas}
+  </table>
+</div><div class="rodape1">&nbsp;</div>
+</form>

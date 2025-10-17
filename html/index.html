@@ -1,0 +1,23 @@
+<link href="../style.css" rel="stylesheet" type="text/css">
+<form name="form1" method="post" action="">
+  <div class="cabecalho1">Autentica&ccedil;&atilde;o</div>
+  {if $msg}
+  <div class="msg">{$msg}</div>
+  {/if}
+  <div align="center" style="padding: 15px">
+    <table border="1" cellpadding="5" cellspacing="0" class="tb_pass">
+      <tr>
+        <td class="tb_pass">Usu&aacute;rio:</td>
+        <td class="tb_pass"><input name="user" type="text" id="user" value="{$user}"></td>
+      </tr>
+      <tr>
+        <td class="tb_pass">Senha:</td>
+        <td class="tb_pass"><input type="password" name="pass" id="pass"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="right" class="td_pass"><input name="entrar" type="submit" id="entrar" value="Entrar"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="rodape1">&nbsp;</div>
+</form>

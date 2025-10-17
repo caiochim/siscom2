@@ -1,0 +1,34 @@
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<form id="form1" name="form1" method="post" action="">
+  <div class="cabecalho1">Relat&oacute;rios - Faturamento por Per&iacute;odo</div>
+  <div class="cabecalho2"> &nbsp;</div>
+  {if $msg}
+  <div class="msg">{$msg}</div>
+  {/if}
+  <div style="padding: 15px">Informe o per&iacute;odo desejado:<br />
+    <br />
+    De: {$select_inicio} | At&eacute;: {$select_fim}
+    <input type="submit" name="gerar_relatorio" id="gerar_relatorio" value="Gerar relat&oacute;rio" />
+</div>
+  {if $avista}
+  <hr />
+  <div style="padding: 15px"> Per&iacute;odo: de {$inicio} at&eacute; {$fim} <br />
+      <br />
+    <table border="0" align="center" cellpadding="2" cellspacing="0">
+      <tr>
+        <td>Venda a vista:</td>
+        <td align="right">R${$avista}</td>
+      </tr>
+      <tr>
+        <td>Venda a prazo:</td>
+        <td align="right">R${$aprazo}</td>
+      </tr>
+      <tr>
+        <td>Recebimento de contas:</td>
+        <td align="right">R${$contas}</td>
+      </tr>
+    </table>
+  </div>
+  {/if}
+  <div class="rodape1">&nbsp;</div>
+</form>

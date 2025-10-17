@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>SisCom2</title>
+</head>
+<body {$body}>
+<table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="background: #FFFFFF url(../logomarca.jpg) center no-repeat">
+  <tr>
+    <td colspan="2" align="center" class="border_bottom" style="padding: 5px"><strong>Rose Conveni&ecirc;ncia e Cafeteria<br>
+      Sistema Comercial - SisCom2</strong></td>
+  </tr>
+  <tr>
+    <td width="170" height="100%" valign="top" class="border_right" style="padding: 15px">
+	{if valida_menu()}{$menu}&raquo; <a href="logout.php">Sair</a>{/if}&nbsp;</td>
+    <td valign="top">{include file=$conteudo}</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" class="border_top" style="padding: 5px">SisCom2 - v20090128b - <a href="http://">Rose</a></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<form id="form1" name="form1" method="post" action="">
+<div class="cabecalho1">Relat&oacute;rios - Vendas a Prazo</div>
+<div class="cabecalho2">&nbsp;</div>
+{if $msg}
+<div class="msg">{$msg}</div>
+{/if}
+<div style="padding: 15px">
+<table border="0" cellpadding="2" cellspacing="1">
+	<tr>
+		<td class="lista_cabecalho">#</td>
+		<td class="lista_cabecalho">Cliente</td>
+		<td width="50" class="lista_cabecalho">&Uacute;ltima Compra</td>
+		<td width="50" class="lista_cabecalho">&Uacute;ltimo Pagamento</td>
+		<td class="lista_cabecalho">Saldo (R$)</td>
+	</tr>
+	{$linhas}
+	<tr>
+		<td colspan="4" align="right" class="lista_linhas"><strong>TOTAL:</strong></td>
+		{$total}
+	</tr>
+</table>
+</div>
+</form>
